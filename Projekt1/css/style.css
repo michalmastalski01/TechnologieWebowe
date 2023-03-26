@@ -1,0 +1,25 @@
+html {
+    font-size: 5vw;
+}
+
+div {
+    display: flex;
+}
+
+header {
+    position: absolute;
+    height: 15vh;
+    width: 100vw;
+    padding: 5%;
+    background-color: cyan;
+}
+.headerLogoDiv {
+    font-size: 2rem;
+}
+.fa-bars {
+    font-size: 2rem;
+}
+
+.openContent {
+
+}

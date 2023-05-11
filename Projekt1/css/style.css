@@ -3,6 +3,7 @@
     --lightdark: rgb(40, 40, 40);
     --cyan: rgb(0, 210, 210);
     --lightgray: lightgray;
+    --cream: rgb(240, 240, 240);
 }
 
 @font-face {
@@ -209,5 +210,36 @@ header{
     text-align: center;
 }
 .video iframe{
-    width: 100%;
+    max-width: 80vw;
+    max-height: 50%;
+}
+.services{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 15% 0%;
+    background-color: var(--cream);
+}
+.services .item{
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 40%;
+}
+.services .icon{
+    font-size: 2rem;
+    padding: 10px;
+    color: var(--dark);
+}
+.services strong{
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: var(--dark);
+}
+.services p{
+    color: var(--lightdark);
 }

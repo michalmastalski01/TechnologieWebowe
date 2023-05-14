@@ -5,6 +5,11 @@
     --lightgray: lightgray;
     --cream: rgb(240, 240, 240);
 }
+*{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
 
 @font-face {
     font-family: montserrat;
@@ -20,7 +25,6 @@ header{
     position: absolute;
     flex-direction: row;
     justify-content: space-around;
-    align-items: center;
     height: 2vh;
     width: 100%;
     padding: 4vh 0vh;
@@ -31,15 +35,12 @@ header{
     overflow: hidden;
     justify-content: end;
     height: 100vh;
-    text-align: center;
 }
 .openContent .content{
     color: var(--lightdark);
     display: flex;
     flex-direction: column;
     position: absolute;
-    justify-content: center;
-    align-items: center;
     width: inherit;
     height: inherit;
     padding: 0px 5%;
@@ -68,8 +69,6 @@ header{
     color: var(--dark);
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
     padding: 15% 10%;
 }
 .aboutus h3{
@@ -80,24 +79,18 @@ header{
     color: var(--lightdark);
     font-size: 1.2rem;
     padding: 15px;
-    text-align: center;
 }
 .skills{
     color: white;
     display: flex;
     overflow: hidden;
     height: 75vh;
-    text-align: center;
-    justify-content: center;
-    align-items: center;
     color: black;
 }
 .skills .content{
     display: flex;
     flex-direction: column;
     position: absolute;
-    justify-content: center;
-    align-items: center;
     width: inherit;
     height: inherit;
     padding: 5vh;
@@ -114,8 +107,6 @@ header{
     color: var(--lightdark);
     padding: 25px 10px;
     font-size: 1.2rem;
-    align-items: center;
-    justify-content: center;
 }
 .skills p:before{
     content: "";
@@ -146,7 +137,6 @@ header{
 .stats {
     display: flex;
     flex-direction: column;
-    text-align: center;
     background-color: var(--cyan);
     padding: 25px;
     color: white;
@@ -194,20 +184,16 @@ header{
     color: var(--dark);
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
     padding: 15% 10%;
 }
 .video h4{
     font-size: 2rem;
     font-weight: bold;
-    text-align: center;
 }
 .video p{
     color: var(--lightdark);
     font-size: 1.2rem;
     padding: 15px;
-    text-align: center;
 }
 .video iframe{
     max-width: 80vw;
@@ -216,8 +202,6 @@ header{
 .services{
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
     padding: 15% 0%;
     background-color: var(--cream);
 }
@@ -225,9 +209,6 @@ header{
     padding: 10px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
     width: 40%;
 }
 .services .icon{
@@ -242,4 +223,95 @@ header{
 }
 .services p{
     color: var(--lightdark);
+}
+.reviews{
+    display: flex;
+    height: 50vh;
+    background-color: var(--cyan);
+    color: white;
+}
+.reviews h4{
+    font-size: 1.2rem;
+    padding-bottom: 15px;
+    font-weight: bold;
+    width: 80vw;
+}
+.partners{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 25px;
+    height: 10vh;
+}
+.partners img{
+    width: 3rem;
+    height: 3rem;
+}
+.contact{
+    display: flex;
+    flex-direction: column;
+    height: 125vh;
+    background-color: var(--cream);
+}
+.contact h3{
+    font-size: 2rem;
+    margin-bottom: 25px;
+    font-weight: bold;
+    width: 80vw;
+}
+.contact p{
+    font-size: 1.2rem;
+    width: 80vw;
+    margin-bottom: 25px;
+}
+.contact input{
+    height: 50px;
+    width: 80vw;
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    border: none;
+    font-family: montserrat;
+}
+.contact textarea{
+    resize: none;
+    height: 25vh;
+    width: 80vw;
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    border: none;
+    font-family: montserrat;
+}
+.contact .submit{
+    background-color: var(--cyan);
+    width: 70vw;
+    height: 75px;
+    font-size: 1.2rem;
+    color: white;
+}
+footer{
+    display: flex;
+    flex-direction:column-reverse;
+    color: white;
+    background-color: var(--dark);
+    padding: 20px;
+}
+footer .name{
+    margin-bottom: 20px;
+}
+footer .name h5{
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+footer .address{
+    margin-bottom: 20px;
+}
+a{
+    color: white;
+    text-decoration: none;
+    padding: 5px;
+}
+footer .links{
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
 }

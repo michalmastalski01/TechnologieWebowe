@@ -29,12 +29,29 @@ header{
     width: 100%;
     padding: 4vh 0vh;
 }
+header .headerLogoDiv{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+header img{
+    height: 50px;
+}
+header nav i{
+    display: block;
+}
+header nav .nav-desktop{
+    display: none;
+}
 .openContent{
     color: var(--dark);
     display: flex;
     overflow: hidden;
     justify-content: end;
     height: 100vh;
+}
+.openContent img{
+    pointer-events: none;
 }
 .openContent .content{
     color: var(--lightdark);
@@ -61,6 +78,7 @@ header{
     border: none;
     border-radius: 2%;
     transition: transform 0.3s ease-in-out;
+    cursor: pointer;
 }
 .openContent button:hover{
     transform: scale(1.1);
@@ -195,7 +213,7 @@ header{
     font-size: 1.2rem;
     padding: 15px;
 }
-.video iframe{
+.video video{
     max-width: 80vw;
     max-height: 50%;
 }
@@ -219,6 +237,7 @@ header{
 .services strong{
     font-size: 1.2rem;
     font-weight: bold;
+    text-transform: uppercase;
     color: var(--dark);
 }
 .services p{
@@ -246,12 +265,14 @@ header{
 .partners img{
     width: 3rem;
     height: 3rem;
+    filter: grayscale(100%);
 }
 .contact{
     display: flex;
     flex-direction: column;
-    height: 125vh;
+    height: 125vh;      
     background-color: var(--cream);
+    padding: 0 20%;
 }
 .contact h3{
     font-size: 2rem;
@@ -314,4 +335,67 @@ footer .links{
     display: flex;
     flex-wrap: wrap;
     margin-bottom: 20px;
+}
+@media only screen and (min-width: 992px) {
+    body{
+        flex-wrap: wrap;
+    }
+    header{
+        position: absolute;
+        z-index: 1;
+        height: 10vh;
+    }
+    header nav .fa-solid {
+        display: none;
+    }
+    header nav .nav-desktop {
+        display: flex;
+    }
+    header nav .nav-desktop a {
+        color: var(--dark);
+        font-size: 1.2rem;
+        margin: 0% 5px;
+        transition: 0.2s ease-in-out;
+    }
+    header nav .nav-desktop a:hover {
+        color: var(--cyan);
+    }
+    .openContent img{
+        pointer-events: none;
+        z-index: -1;
+    }
+    .openContent .content{
+        padding: 0 20%;
+    }
+    .aboutus{
+        padding: 10% 20%;
+    }
+    .stats{
+        flex-direction: row;
+        padding: 5% 0%;
+    }
+    .gallery{
+        display: flex;
+        flex-direction: row;
+    }
+    .video{
+        padding: 10% 20%;
+    }
+    .services{
+        padding: 5% 0%;
+    }
+    .services .item{
+        padding: 10px;
+        width: 20%;
+    }
+    .reviews{
+        padding: 0% 20%;
+    }
+    .contact form .submit{
+        transition: transform 0.3s ease-in-out;
+        cursor: pointer;
+    }
+    .contact form .submit:hover{
+        transform: scale(1.1);
+    }
 }

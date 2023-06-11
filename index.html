@@ -11,21 +11,32 @@
 </head>
 <body>
     <header>
-        <div class="headerLogoDiv">LOGO</div>
-        <nav><i class="fa-solid fa-bars"></i></nav>
+        <div class="headerLogoDiv"><img src="/Projekt1/png/logo.png" alt="logo"></div>
+        <nav>
+            <i class="fa-solid fa-bars"></i>
+            <ul class="nav-desktop">
+                <li><a href=".content">Home</a></li>
+                <li><a href="#aboutus">About</a></li>
+                <li><a href="#work">Work</a></li>
+                <li><a href="#process">Process</a></li>
+                <li><a href="#services">Services</a></li>
+                <li> <a href="#testimonials">Testimonials</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
     </header>
     <div class="openContent">
         <img src="Projekt1/png/laptop2.jpg" id="1">
         <div class="content">
-            <h2>We Design and Develop</h2>
+            <h2 id="typing"></h2>
             <p>We are a new design studio based in USA.
                 We have over 20 years of combined experience,
                  and know a thing or two about designing websites and mobile apps.   
             </p>
-            <button>CONTACT US</button>
+            <button><a href="#contact">CONTACT US</a></button>
         </div>
     </div>
-    <div class="aboutus">
+    <div class="aboutus" id="aboutus">
         <h3>About Us</h3>
         <p>Divide have don't man wherein air fourth. Own itself make have
             night won't make. A you under Seed appear which good give. Own
@@ -33,7 +44,7 @@
             she'd won't very all.
         </p>
     </div>
-    <div class="skills">
+    <div class="skills" id="work">
         <img src="Projekt1/png/desk.jpg" id="2">
         <div class="content">
             <h3>Professional Skills</h3>
@@ -48,7 +59,7 @@
             </div>
         </div>
     </div>
-    <div class="stats">
+    <div class="stats" id="process">
         <div class="projects">
             <div class="icon1"><i class="fa-solid fa-briefcase"></i></div>
             <p><strong>548</strong><br>Projects Completed</p>
@@ -81,13 +92,13 @@
         </div>
     </div>
     <div class="video">
-        <h4>Our work progress</h4>
+        <h4>Our work process</h4>
         <p>Was years it seasons was there form he in in them together
             over that, third sixth gathered female creeping bearing behold years.
         </p>
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/LXb3EKWsInQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        <video src="Projekt1/png/1.MP4" width="400" type="video/mp4" controls></video>
     </div>
-    <div class="services">
+    <div class="services" id="services">
         <div class="item">
             <div class="icon"><i class="fa-regular fa-gem"></i></div>
             <strong>UI/UX Design</strong><p><br>Be set fourth land
@@ -129,7 +140,7 @@
             multiply appear life be</p>
         </div>
     </div>
-    <div class="reviews">
+    <div class="reviews" id="testimonials">
         <div id="review1">
             <h4>"Outstanding job and exceed all expectations.
                 It was a pleasure to work with them on a sizeable
@@ -137,8 +148,6 @@
                 one asap"</h4>
             <p>Michael Hopkins</p>
         </div>
-        <div id="review2"></div>
-        <div id="review3"></div>
     </div>
     <div class="partners">
         <div><img src="Projekt1/png/wolfsburg.png" alt="wolfsburg-logo"></div>
@@ -147,7 +156,7 @@
         <div><img src="Projekt1/png/wolfsburg.png" alt="wolfsburg-logo"></div>
         <div><img src="Projekt1/png/wolfsburg.png" alt="wolfsburg-logo"></div>
     </div>
-    <div class="contact">
+    <div class="contact" id="contact">
         <h3>Need a Project?</h3>
         <p>Let us know what you're looking for
             in an agency. We'll take a look and 
@@ -169,7 +178,7 @@
             <p>Designed by Michal Mastalski</p>
         </div>
         <div class="address">
-            <a href="email:hello@pirolltheme.com">hello@pirolltheme.com</a><br>
+            <a href="mailto:hello@pirolltheme.com">hello@pirolltheme.com</a><br>
             <a href="tel:+44987065908">+44987065908</a>
         </div>
         <div class="links">
@@ -183,5 +192,6 @@
             <a href="">Legals</a>
         </div>
     </footer>
+    <script src="Projekt1/script.js"></script>
 </body>
 </html>
